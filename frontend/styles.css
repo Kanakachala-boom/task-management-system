@@ -1,0 +1,95 @@
+:root { --primary: #3B82F6; --bg: #F3F4F6; --text: #1F2937; }
+
+body {
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2563EB;
+}
+
+.flex-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item div {
+    display: flex;
+    gap: 5px;
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: #9CA3AF;
+}
+
+.btn-small {
+    width: auto;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* GREEN */
+.btn-complete {
+    background-color: #10B981 !important;
+}
+
+/* RED */
+.btn-delete {
+    background-color: #EF4444 !important;
+}
+
+/* LOGOUT */
+.btn-logout {
+    background-color: #6B7280 !important;
+}
+
+.btn-complete:hover {
+    background-color: #059669 !important;
+}
+
+.btn-delete:hover {
+    background-color: #DC2626 !important;
+}
